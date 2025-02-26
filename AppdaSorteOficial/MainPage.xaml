@@ -5,19 +5,34 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="MainPage"
     BackgroundColor="Green">
-    <VerticalStackLayout BackgroundColor="Grey">
+    <VerticalStackLayout
+        BackgroundColor="Grey"
+        HorizontalOptions="CenterAndExpand"
+        VerticalOptions="CenterAndExpand">
+        <!--  Para centralizar todo conteudo , pemos que modificar no VerticalStackLayout  -->
         <!--  Coloca um elemento abaixo do outro  -->
         <Image
-            Margin="0,50,0,0"
             HeightRequest="115"
             Source="logo_green.png"
             WidthRequest="74" />
         <Label
             Margin="0,20,0,120"
             HorizontalOptions="Center"
+            IsVisible="False"
             Text="Número da Sorte"
             TextColor="#00AB37"
             VerticalOptions="Center" />
-        <Button HorizontalOptions="Center" Text="Gerar número da Sorte" />
+        <Label Margin="0,0,20,0" Text="O número da sorte é: " />
+        <Label Text="01" />
+        <Label Text="02" />
+        <Label Text="03" />
+        <Label Text="04" />
+        <Label Text="05" />
+        <Label Text="06" />
+        <Label HorizontalOptions="Center" Text="Boa Sorte!" />
+        <Button
+            Margin="0,0,0,50"
+            HorizontalOptions="Center"
+            Text="Gerar número da Sorte" />
     </VerticalStackLayout>
 </ContentPage>
