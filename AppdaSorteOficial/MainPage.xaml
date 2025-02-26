@@ -4,11 +4,11 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="MainPage"
-    BackgroundColor="Green">
+    BackgroundColor="#ffffff">
     <!--  O ScrollView aparece a barra de Rolagem  -->
     <ScrollView>
         <VerticalStackLayout
-            BackgroundColor="Grey"
+
             HorizontalOptions="CenterAndExpand"
             VerticalOptions="CenterAndExpand">
             <!--  Para centralizar todo conteudo , pemos que modificar no VerticalStackLayout  -->
@@ -26,8 +26,8 @@
                 TextColor="#00AB37"
                 VerticalOptions="Center" />
 
-            <VerticalStackLayout x:Name="ConteinerNumeros" IsVisible="True">
-                <Label Margin="0,0,20,0" Text="O número da sorte é: " />
+            <VerticalStackLayout x:Name="ConteinerNumeros" IsVisible="False">
+                <Label HorizontalOptions="Center" Margin="0,0,20,0" Text="O número da sorte é: " />
                 <HorizontalStackLayout
                     Margin="0,70"
                     HorizontalOptions="Center"
@@ -73,22 +73,12 @@
                         Stroke="#00AB37"
                         StrokeShape="RoundRectangle 8">
                         <Label
-                            x:Name="numero03"
-                            FontSize="24"
-                            Text="01"
-                            TextColor="#00AB37" />
-                    </Border>
-
-                    <Border
-                        Padding="10,5"
-                        Stroke="#00AB37"
-                        StrokeShape="RoundRectangle 8">
-                        <Label
                             x:Name="numero04"
                             FontSize="24"
                             Text="01"
                             TextColor="#00AB37" />
                     </Border>
+
                     <Border
                         Padding="10,5"
                         Stroke="#00AB37"
@@ -99,13 +89,23 @@
                             Text="01"
                             TextColor="#00AB37" />
                     </Border>
-
                     <Border
                         Padding="10,5"
                         Stroke="#00AB37"
                         StrokeShape="RoundRectangle 8">
                         <Label
                             x:Name="numero06"
+                            FontSize="24"
+                            Text="01"
+                            TextColor="#00AB37" />
+                    </Border>
+
+                    <Border
+                        Padding="10,5"
+                        Stroke="#00AB37"
+                        StrokeShape="RoundRectangle 8">
+                        <Label
+                            x:Name="numero07"
                             FontSize="24"
                             Text="01"
                             TextColor="#00AB37" />
