@@ -6,4 +6,10 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 	}
+	private void GerarNumeros(object sender, EventArgs e)
+	{
+		NomeAPP.IsVisible = false;
+		ConteinerNumeros.IsVisible = true;
+	}
+	
 }
