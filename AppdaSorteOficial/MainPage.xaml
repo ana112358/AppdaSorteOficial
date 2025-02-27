@@ -7,10 +7,12 @@
     BackgroundColor="#ffffff">
     <!--  O ScrollView aparece a barra de Rolagem  -->
     <ScrollView>
-        <VerticalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center"> 
+            <!--  CenterAndExpan está obsoleto  -->
             <!--  Para centralizar todo conteudo , pemos que modificar no VerticalStackLayout  -->
             <!--  Coloca um elemento abaixo do outro  -->
             <Image
+                Margin="0,50,0,0"
                 HeightRequest="115"
                 Source="logo_green.png"
                 WidthRequest="74" />
