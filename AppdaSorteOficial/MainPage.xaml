@@ -7,10 +7,7 @@
     BackgroundColor="#ffffff">
     <!--  O ScrollView aparece a barra de Rolagem  -->
     <ScrollView>
-        <VerticalStackLayout
-
-            HorizontalOptions="CenterAndExpand"
-            VerticalOptions="CenterAndExpand">
+        <VerticalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
             <!--  Para centralizar todo conteudo , pemos que modificar no VerticalStackLayout  -->
             <!--  Coloca um elemento abaixo do outro  -->
             <Image
@@ -27,7 +24,10 @@
                 VerticalOptions="Center" />
 
             <VerticalStackLayout x:Name="ConteinerNumeros" IsVisible="False">
-                <Label HorizontalOptions="Center" Margin="0,0,20,0" Text="O número da sorte é: " />
+                <Label
+                    Margin="0,0,20,0"
+                    HorizontalOptions="Center"
+                    Text="O número da sorte é: " />
                 <HorizontalStackLayout
                     Margin="0,70"
                     HorizontalOptions="Center"
@@ -119,7 +119,7 @@
             <Label HorizontalOptions="Center" Text="Boa Sorte!" />
             <Button
                 Margin="0,0,0,50"
-                Clicked="GerarNumeros"
+                Clicked="OnGererateLuckNumbers"
                 HorizontalOptions="Center"
                 Text="Gerar número da Sorte" />
         </VerticalStackLayout>
