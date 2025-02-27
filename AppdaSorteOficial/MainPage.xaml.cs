@@ -17,7 +17,11 @@ public partial class MainPage : ContentPage
 		numero01.Text = set.ElementAt(0).ToString("D2");
 		numero02.Text = set.ElementAt(1).ToString("D2");
 		numero03.Text = set.ElementAt(3).ToString("D2");
-	}
+		numero04.Text = set.ElementAt(4).ToString("D2");
+        numero05.Text = set.ElementAt(5).ToString("D2");
+        numero06.Text = set.ElementAt(5).ToString("D2");
+        numero07.Text = set.ElementAt(7).ToString("D2");
+    }
 	private static SortedSet<int> GerarNumeros()
 	{
       
